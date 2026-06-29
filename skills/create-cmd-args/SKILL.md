@@ -1,11 +1,12 @@
 ---
 description: Turn my PREVIOUS message into a PARAMETERIZED slash command with $ARGUMENTS slots
 argument-hint: <command-name> [--global | --project]
+disable-model-invocation: true
 ---
 
 The user wants to take their **previous message** — the most recent user turn in this
-conversation *before* this `/create-cmd-args` invocation — and save it as a reusable custom
-slash command that is **parameterized**, so the variable parts become arguments.
+conversation *before* this invocation — and save it as a reusable custom slash command that is
+**parameterized**, so the variable parts become arguments.
 
 Raw arguments: `$ARGUMENTS`
 

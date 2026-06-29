@@ -1,11 +1,11 @@
 ---
 description: Save my PREVIOUS message verbatim as a reusable slash command (name required)
 argument-hint: <command-name> [--global | --project]
+disable-model-invocation: true
 ---
 
 The user wants to save their **previous message** — the most recent user turn in this
-conversation *before* this `/create-cmd` invocation — as a reusable custom slash command,
-**unchanged**.
+conversation *before* this invocation — as a reusable custom slash command, **unchanged**.
 
 Raw arguments: `$ARGUMENTS`
 
@@ -15,7 +15,7 @@ Do this:
    - `--global` / `-g` / the word `global` -> save system-wide.
    - `--project` / `-p` / the word `project` -> save to the current project.
    - Everything else is the command name.
-2. If no name is given, STOP and ask for one, e.g. `/create-cmd fix-bug`. A name is required.
+2. If no name is given, STOP and ask for one, e.g. `/slash-it:create-cmd fix-bug`. A name is required.
 3. **Determine where to save (scope):**
    - If a scope flag was given, use it.
    - Otherwise, ASK the user with AskUserQuestion: "Where should `/<name>` be saved?" with
