@@ -1,17 +1,18 @@
 ---
 description: Reshape my PREVIOUS message using extra instructions, then save it as a slash command
 argument-hint: <command-name> | <how to change it> [--global | --project]
+disable-model-invocation: true
 ---
 
 The user wants to take their **previous message** — the most recent user turn in this
-conversation *before* this `/create-cmd-instruct` invocation — **modify it according to extra
-instructions they provide here**, and save the result as a reusable custom slash command.
+conversation *before* this invocation — **modify it according to extra instructions they provide
+here**, and save the result as a reusable custom slash command.
 
 Raw arguments: `$ARGUMENTS`
 
 The arguments contain a command **name** and **instructions** for how to change the prompt,
 separated by a `|` pipe. An optional scope flag may appear in the name part. Example:
-`/create-cmd-instruct daily-report --project | output a markdown table and ask for the date`
+`/slash-it:create-cmd-instruct daily-report --project | output a markdown table and ask for the date`
 
 Do this:
 

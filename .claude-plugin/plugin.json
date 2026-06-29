@@ -1,0 +1,17 @@
+{
+  "name": "slash-it",
+  "description": "Turn the message you just typed in Claude Code into a reusable slash command — verbatim, optimised, reshaped, or parameterized — and list what you've saved.",
+  "version": "1.0.0",
+  "author": {
+    "name": "fayis-techwarelab"
+  },
+  "homepage": "https://github.com/fayis-techwarelab/slash-IT",
+  "repository": "https://github.com/fayis-techwarelab/slash-IT",
+  "license": "MIT",
+  "keywords": [
+    "slash-commands",
+    "productivity",
+    "prompts",
+    "workflow"
+  ]
+}

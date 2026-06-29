@@ -1,11 +1,12 @@
 ---
 description: Optimise my PREVIOUS message into a better prompt, then save it as a slash command
 argument-hint: <command-name> [--global | --project]
+disable-model-invocation: true
 ---
 
 The user wants to take their **previous message** — the most recent user turn in this
-conversation *before* this `/create-cmd-optimise` invocation — **improve it into a stronger
-prompt**, and save the improved version as a reusable custom slash command.
+conversation *before* this invocation — **improve it into a stronger prompt**, and save the
+improved version as a reusable custom slash command.
 
 Raw arguments: `$ARGUMENTS`
 

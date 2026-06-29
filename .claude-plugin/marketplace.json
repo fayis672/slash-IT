@@ -1,0 +1,14 @@
+{
+  "name": "slash-it",
+  "description": "slash-IT — save the message you just typed as a reusable Claude Code slash command.",
+  "owner": {
+    "name": "fayis-techwarelab"
+  },
+  "plugins": [
+    {
+      "name": "slash-it",
+      "source": ".",
+      "description": "Turn the message you just typed into a reusable slash command — verbatim, optimised, reshaped, or parameterized — and list what you've saved."
+    }
+  ]
+}
