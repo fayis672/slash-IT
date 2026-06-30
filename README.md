@@ -26,11 +26,22 @@ saved to your `~/.claude/commands/` or project `.claude/commands/` directory.
 ### From a marketplace (recommended for sharing)
 
 ```text
-/plugin marketplace add fayis-techwarelab/slash-IT
+/plugin marketplace add fayis672/slash-IT
 /plugin install slash-it@slash-it
 ```
 
 Then enable it from `/plugin` if it isn't already. Run `/reload-plugins` after updates.
+
+### From a git clone
+
+Clone the repo, then load the plugin directly from the cloned directory:
+
+```bash
+git clone https://github.com/fayis672/slash-IT.git
+claude --plugin-dir ./slash-IT
+```
+
+Pull the latest changes with `git pull`, then run `/reload-plugins` to pick them up.
 
 ### Local development / testing
 
